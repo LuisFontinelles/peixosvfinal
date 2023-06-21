@@ -1,0 +1,141 @@
+.maincart {
+  display: flex; /* Cria um contêiner flexível */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  margin-top: 200px; /* Margem superior de 200 pixels */
+  margin-bottom: 200px; /* Margem inferior de 200 pixels */
+  flex-direction: column; /* Define a direção dos itens como coluna */
+  flex: 1; /* Ocupa todo o espaço disponível */
+}
+
+.maincart img {
+  width: 200px; /* Largura da imagem de 200 pixels */
+  height: auto; /* Altura automática para manter a proporção */
+}
+
+.table-cart {
+  width: 900px; /* Largura da tabela de 900 pixels */
+  text-align: center; /* Alinhamento centralizado do texto */
+}
+
+.table-cart th {
+  padding: 8px; /* Preenchimento interno das células da tabela */
+}
+
+.table-cart td {
+  padding: 8px; /* Preenchimento interno das células da tabela */
+}
+
+#buttonremove {
+  background-color: #fff; /* Cor de fundo branca */
+  width: 20px; /* Largura do botão de remoção de 20 pixels */
+  height: 20px; /* Altura do botão de remoção de 20 pixels */
+  color: #000; /* Cor do texto preto */
+  font-weight: bold; /* Texto em negrito */
+  border: none; /* Sem borda */
+}
+
+#buttonremove a {
+  color: #000; /* Cor do texto preto */
+}
+
+.continuarbutton {
+  display: flex; /* Cria um contêiner flexível */
+  width: 200px; /* Largura do botão de 200 pixels */
+  height: 50px; /* Altura do botão de 50 pixels */
+  background-color: #000; /* Cor de fundo preta */
+  border-radius: 4px; /* Borda arredondada com raio de 4 pixels */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  margin-left: 700px; /* Margem esquerda de 700 pixels */
+}
+
+.continuarbutton a {
+  color: #fff; /* Cor do texto branco */
+  font-weight: bold; /* Texto em negrito */
+}
+
+/* RESPONSIVIDADE */
+
+/* Estilos aplicados quando a largura da tela é menor ou igual a 920px */
+@media only screen and (max-width: 920px) {
+  .table-cart {
+    width: 800px; /* Largura da tabela de 800 pixels */
+    font-size: 15px; /* Tamanho da fonte de 15 pixels */
+  }
+
+  .table-cart th {
+    padding: 5px; /* Preenchimento interno das células da tabela */
+  }
+
+  .table-cart td {
+    padding: 5px; /* Preenchimento interno das células da tabela */
+  }
+
+  .continuarbutton {
+    margin-left: 400px; /* Margem esquerda de 400 pixels */
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+  .table-cart {
+    width: 600px;
+  }
+
+  .table-cart td img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .continuarbutton {
+    margin-left: 400px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .table-cart {
+    width: 400px;
+    font-size: 9px;
+  }
+
+  .maincart table img {
+    height: 120px;
+  }
+
+  .continuarbutton {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 414px) {
+  .table-cart {
+    width: 350px;
+    font-size: 8px;
+  }
+
+  .maincart table img {
+    height: 100px;
+  }
+
+  .continuarbutton {
+    width: 100px;
+    height: 40px;
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 320px) {
+  .table-cart {
+    width: 100px;
+    text-align: center;
+  }
+
+  .table-cart th {
+    padding: 2px;
+  }
+
+  .table-cart td {
+    padding: 2px;
+  }
+}

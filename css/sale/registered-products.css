@@ -1,0 +1,46 @@
+.registered-products img{
+  width: 200px;
+  height: 150px;
+}
+
+.product-edit-admin img{
+  width: 200px;
+  height: 200px;
+}
+
+.product-edit-admin{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.registered-products{
+  display: flex;
+  gap: 20px;
+  text-align: center;
+}
+
+.admin-registered-products{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+.admin-registered-products img{
+  max-height: 200px;
+}
+
+.product-edit{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.button-edit{
+  padding: 10px 10px;
+  background-color: #000;
+  color: #fff;
+}

@@ -1,0 +1,51 @@
+.product-main {
+  display: grid; /* Cria um grid para organizar os elementos */
+  grid-template-columns: 1fr 1fr; /* Define duas colunas iguais */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  margin-top: 100px; /* Margem superior de 100 pixels */
+  margin-bottom: 100px; /* Margem inferior de 100 pixels */
+  font-size: 20px; /* Tamanho da fonte de 20 pixels */
+  flex: 1; /* Expande o elemento para preencher o espaço disponível */
+}
+
+.product-select {
+  display: flex; /* Cria um contêiner flexível */
+  flex-direction: column; /* Define a direção dos itens como coluna */
+  gap: 30px; /* Espaçamento entre os itens de 30 pixels */
+}
+
+.confirm-product {
+  display: inline-block; /* Define o elemento como bloco em linha */
+}
+
+.confirm-product a {
+  padding: 10px 115px; /* Espaçamento interno superior e inferior de 10 pixels, espaçamento interno esquerdo e direito de 115 pixels */
+  color: #fff; /* Cor do texto branco */
+  background-color: #000; /* Cor de fundo preta */
+  border-radius: 4px; /* Arredonda as bordas */
+}
+
+.confirm-product a:hover {
+  background-color: #262626; /* Cor de fundo ao passar o mouse */
+}
+
+select[id="sizeselect"] {
+  background-color: #fff; /* Cor de fundo branca */
+  height: 50px; /* Altura de 50 pixels */
+  margin-top: 10px; /* Margem superior de 10 pixels */
+  padding: 10px; /* Espaçamento interno de 10 pixels */
+  font-size: 13px; /* Tamanho da fonte de 13 pixels */
+  width: 200px; /* Largura de 200 pixels */
+  color: #000; /* Cor do texto preto */
+  border: 1px solid #c4c4c4; /* Borda de 1 pixel sólida na cor cinza */
+  margin-left: 20px; /* Margem esquerda de 20 pixels */
+}
+
+@media (max-width: 700px) {
+  .product-main {
+    display: flex; /* Cria um contêiner flexível */
+    justify-content: center; /* Centraliza horizontalmente os itens */
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    text-align: center; /* Centraliza o texto */
+  }
+}

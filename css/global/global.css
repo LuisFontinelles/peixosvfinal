@@ -1,0 +1,40 @@
+body {
+  margin: 0px; /* Remove as margens padrão do corpo */
+  font-family: 'Fira Sans', Arial, Helvetica, sans-serif; /* Define a fonte do texto */
+  min-height: 100vh; /* Define a altura mínima do corpo igual à altura da viewport */
+  display: flex; /* Cria um contêiner flexível */
+  flex-direction: column; /* Define a direção dos itens como coluna */
+  gap: 20px; /* Espaçamento entre os itens de 20 pixels */
+  color: #fff; /* Cor do texto branco */
+  background-color: #141414; /* Cor de fundo preta */
+}
+
+h1,
+ul,
+p,
+h2,
+h3,
+h4 {
+  margin: 0px; /* Remove as margens padrão dos títulos e parágrafos */
+}
+
+ul {
+  padding: 0px; /* Remove o preenchimento interno das listas não ordenadas */
+  list-style: none; /* Remove os marcadores de lista */
+}
+
+a {
+  text-decoration: none; /* Remove a decoração de texto sublinhado dos links */
+  color: inherit; /* Herda a cor do texto do elemento pai */
+}
+
+img {
+  max-width: 100%; /* Limita a largura máxima da imagem a 100% do seu contêiner */
+  display: block; /* Remove o espaço em branco abaixo da imagem */
+}
+
+.container {
+  max-width: 1400px; /* Define a largura máxima do contêiner */
+  margin-left: auto; /* Centraliza horizontalmente o contêiner */
+  margin-right: auto; /* Centraliza horizontalmente o contêiner */
+}

@@ -1,0 +1,32 @@
+footer {
+  background-color: #172554; /* Cor de fundo azul escuro */
+}
+
+.footer {
+  display: flex; /* Cria um contêiner flexível */
+  justify-content: space-between; /* Distribui o espaço entre os itens */
+  padding: 50px; /* Preenchimento interno de 50 pixels */
+  color: #fff; /* Cor do texto branco */
+}
+
+.politicas {
+  display: flex; /* Cria um contêiner flexível */
+  flex-direction: column; /* Define a direção dos itens como coluna */
+  gap: 10px; /* Espaçamento entre os itens de 10 pixels */
+}
+
+.politicas a:hover {
+  color: #a3a3a3; /* Cor do texto quando o mouse passa por cima */
+}
+
+@media (max-width: 700px) {
+  .footer {
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    gap: 20px; /* Espaçamento entre os itens de 20 pixels */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Alinhamento centralizado do texto */
+  }
+  .politicas {
+    margin-bottom: 50px; /* Margem inferior de 50 pixels */
+  }
+}

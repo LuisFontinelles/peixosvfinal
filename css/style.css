@@ -1,0 +1,16 @@
+@import "./global/header.css";
+@import "./global/footer.css";
+@import "./home/shop.css";
+@import "./global/global.css";
+@import "./contact/contact.css";
+@import "./politica/politica.css";
+@import "./signin/sigin.css";
+@import "./signin/login.css";
+@import "./cart/cart.css";
+@import "./productpage/productpage.css";
+@import "./payment/payment.css";
+@import "./confirmation/confirmation.css";
+@import "./sale/sale.css";
+@import "./sale/register-products.css";
+@import "./sale/registered-products.css";
+@import "./myaccount/myaccount.css"

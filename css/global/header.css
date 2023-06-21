@@ -1,0 +1,76 @@
+.header-bg {
+  background-color: #172554; /* Cor de fundo do cabeçalho */
+}
+
+.header {
+  display: flex; /* Cria um contêiner flexível */
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+  justify-content: space-between; /* Alinha os itens horizontalmente com espaçamento uniforme */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  padding-top: 20px; /* Espaçamento superior de 20 pixels */
+  padding-bottom: 20px; /* Espaçamento inferior de 20 pixels */
+  padding-left: 20px; /* Espaçamento esquerdo de 20 pixels */
+  padding-right: 20px; /* Espaçamento direito de 20 pixels */
+}
+
+.navegation {
+  display: flex; /* Cria um contêiner flexível */
+  flex-direction: row; /* Define a direção dos itens como linha */
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+  gap: 40px; /* Espaçamento entre os itens de 40 pixels */
+  color: #fff; /* Cor do texto branco */
+  padding: 20px; /* Espaçamento interno de 20 pixels */
+}
+
+.navegation a {
+  display: inline-block; /* Define os links como elementos de bloco em linha */
+  padding: 16px 0px; /* Espaçamento interno superior e inferior de 16 pixels, espaçamento interno esquerdo e direito de 0 pixels */
+  position: relative; /* Define a posição como relativa */
+}
+
+.navegation a:after {
+  content: ""; /* Adiciona um conteúdo vazio */
+  display: block; /* Exibe como um elemento de bloco */
+  height: 2px; /* Altura da linha inferior */
+  width: 0px; /* Largura inicial da linha inferior */
+  background: #fff; /* Cor da linha inferior branca */
+  margin-top: 4px; /* Espaçamento superior de 4 pixels */
+  transition: 0.3s; /* Transição suave de 0.3 segundos */
+  position: absolute; /* Define a posição como absoluta */
+}
+
+.navegation a:hover:after {
+  width: 100%; /* Largura total da linha inferior ao passar o mouse */
+}
+
+@media (max-width: 800px) {
+  .header {
+    justify-content: center; /* Centraliza horizontalmente os itens do cabeçalho */
+  }
+
+  .navegation {
+    gap: 20px; /* Espaçamento entre os itens de 20 pixels */
+    color: #ffff; /* Cor do texto branco */
+  }
+  .navegation a {
+    background: #141414; /* Cor de fundo dos links */
+    padding: 12px 16px; /* Espaçamento interno dos links */
+    border-radius: 4px; /* Arredonda as bordas dos links */
+  }
+  .navegation a:hover {
+    background-color: #141414; /* Cor de fundo ao passar o mouse nos links */
+  }
+  .header a:after {
+    display: none; /* Oculta a linha inferior nos links */
+  }
+}
+
+@media (max-width: 600px) {
+  .navegation {
+    gap: 12px;
+  }
+  .navegation a {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}

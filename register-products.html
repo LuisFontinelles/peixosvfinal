@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./img/icones/icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Sale</title>
+</head>
+
+<body>
+  <header class="header-bg">
+    <div class="header container">
+      <a href="index.html"><img src="./img/logos/logo.svg" alt=""></a>
+      <nav>
+        <ul class="navegation">
+          <li><a href="index.html">Mercado</a></li>
+          <li><a href="contact.html">Contato</a></li>
+          <li><a href="signin.html">Admin</a></li>
+          <li><a href="cart.html">Carrinho</a></li>
+          <li><a href="sale-login.html">Vender</a></li>
+          <li><a href="myaccount.html">Minha conta</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="container-register container">
+    <div>
+      <a href="./admin.html"><img src="./img/logos/logo.svg" alt=""></a>
+    </div>
+    <div class="register-product">
+    </div>
+        <div class="register-product">
+      <div class="product-info">
+        <input placeholder="Nome do peixe" type="text" id="input-nome">
+        <input placeholder="Preço do peixe" type="text" id="input-preco">
+        <input placeholder="Descrição do peixe" type="text" id="input-descricao">
+        <input type="file" id="input-imagem" accept="image/*">
+        <a class="button-add" href="#" onclick="adicionarProduto()">Adicionar Produto</a>
+      </div>
+      <div>
+        <img id="imagem-preview" src="" alt="">
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer container">
+      <div class="politicas">
+        <p><a href="politicadeprivacidade.html">Política de Privacidade</a></p>
+        <p><a href="termosdeuso.html">Termos de Uso</a></p>
+      </div>
+      <p>Peixos. Alguns direitos reservados</p>
+    </div>
+  </footer>
+  <script>
+    function adicionarProduto() {
+      const inputNome = document.getElementById('input-nome');
+      const inputPreco = document.getElementById('input-preco');
+      const inputDescricao = document.getElementById('input-descricao');
+      const inputImagem = document.getElementById('input-imagem');
+      const imagemPreview = document.getElementById('imagem-preview');
+
+      const nome = inputNome.value;
+      const preco = inputPreco.value;
+      const descricao = inputDescricao.value;
+      const imagem = inputImagem.files[0];
+
+      // Verifica se todas as informações foram preenchidas
+      if (nome && preco && descricao && imagem) {
+        const reader = new FileReader();
+        
+        reader.onload = function(e) {
+          imagemPreview.src = e.target.result;
+           // Exibe a imagem no container
+        }
+
+        reader.readAsDataURL(imagem); // Lê o arquivo da imagem como uma URL base64
+      } else {
+        alert('Preencha todos os campos e selecione uma imagem!');
+      }
+    }
+  </script>
+</body>
+
+</html>
